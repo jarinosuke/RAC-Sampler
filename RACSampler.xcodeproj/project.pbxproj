@@ -21,6 +21,8 @@
 		2B80B3221886B90000C2689D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B80B3201886B90000C2689D /* InfoPlist.strings */; };
 		2B80B3241886B90000C2689D /* RACSamplerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B80B3231886B90000C2689D /* RACSamplerTests.m */; };
 		2B80B3321886BF0100C2689D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B80B3311886BF0100C2689D /* MasterViewController.m */; };
+		2B80B3371886D9B100C2689D /* FunctionalProgrammingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B80B3351886D9B100C2689D /* FunctionalProgrammingViewController.m */; };
+		2B80B3381886D9B100C2689D /* FunctionalProgrammingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B80B3361886D9B100C2689D /* FunctionalProgrammingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,9 @@
 		2B80B3231886B90000C2689D /* RACSamplerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACSamplerTests.m; sourceTree = "<group>"; };
 		2B80B3301886BF0100C2689D /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		2B80B3311886BF0100C2689D /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		2B80B3341886D9B100C2689D /* FunctionalProgrammingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionalProgrammingViewController.h; sourceTree = "<group>"; };
+		2B80B3351886D9B100C2689D /* FunctionalProgrammingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunctionalProgrammingViewController.m; sourceTree = "<group>"; };
+		2B80B3361886D9B100C2689D /* FunctionalProgrammingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionalProgrammingViewController.xib; sourceTree = "<group>"; };
 		DD833E8C6BFC4E79BDEF9898 /* libPods-RACSampler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACSampler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3EF8A5BC844B28B3424FAA /* Pods-RACSampler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACSampler.xcconfig"; path = "Pods/Pods-RACSampler.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,12 +121,13 @@
 		2B80B3041886B90000C2689D /* RACSampler */ = {
 			isa = PBXGroup;
 			children = (
+				2B80B3331886D80400C2689D /* Samples */,
 				2B80B30D1886B90000C2689D /* AppDelegate.h */,
 				2B80B30E1886B90000C2689D /* AppDelegate.m */,
-				2B80B3101886B90000C2689D /* Images.xcassets */,
-				2B80B3051886B90000C2689D /* Supporting Files */,
 				2B80B3301886BF0100C2689D /* MasterViewController.h */,
 				2B80B3311886BF0100C2689D /* MasterViewController.m */,
+				2B80B3101886B90000C2689D /* Images.xcassets */,
+				2B80B3051886B90000C2689D /* Supporting Files */,
 			);
 			path = RACSampler;
 			sourceTree = "<group>";
@@ -153,6 +159,16 @@
 				2B80B3201886B90000C2689D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2B80B3331886D80400C2689D /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				2B80B3341886D9B100C2689D /* FunctionalProgrammingViewController.h */,
+				2B80B3351886D9B100C2689D /* FunctionalProgrammingViewController.m */,
+				2B80B3361886D9B100C2689D /* FunctionalProgrammingViewController.xib */,
+			);
+			path = Samples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +250,7 @@
 			files = (
 				2B80B3091886B90000C2689D /* InfoPlist.strings in Resources */,
 				2B80B3111886B90000C2689D /* Images.xcassets in Resources */,
+				2B80B3381886D9B100C2689D /* FunctionalProgrammingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B80B30F1886B90000C2689D /* AppDelegate.m in Sources */,
+				2B80B3371886D9B100C2689D /* FunctionalProgrammingViewController.m in Sources */,
 				2B80B3321886BF0100C2689D /* MasterViewController.m in Sources */,
 				2B80B30B1886B90000C2689D /* main.m in Sources */,
 			);

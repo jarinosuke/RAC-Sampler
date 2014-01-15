@@ -7,6 +7,7 @@
 //
 
 #import "MasterViewController.h"
+#import "FunctionalProgrammingViewController.h"
 
 #define kItemKeyTitle       @"title"
 #define kItemKeyDescription @"description"
@@ -26,9 +27,9 @@
         
         self.samples = @[
                          //RXCollection Usage
-                         @{kItemKeyTitle: @"RXCollection Usage",
-                           kItemKeyDescription: @"",
-                           kItemKeyClass: [UIViewController class]}
+                         @{kItemKeyTitle: @"Functional Programming",
+                           kItemKeyDescription: @"We need to learn functional programming before reactive functional programming.",
+                           kItemKeyClass: [FunctionalProgrammingViewController class]}
                          ];
     }
     return self;
@@ -37,7 +38,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,9 +61,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.textColor = [UIColor colorWithRed:0.063 green:0.848 blue:0.355 alpha:1.000];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
+                                      reuseIdentifier:CellIdentifier];
+        
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.textLabel.textColor = [UIColor colorWithRed:0.063 green:0.848 blue:0.355 alpha:1.000];
+        cell.detailTextLabel.numberOfLines = 0;
+    }
     
     NSDictionary *sample = self.samples[indexPath.row];
     cell.textLabel.text = sample[kItemKeyTitle];
@@ -73,6 +79,12 @@
 }
 
 #pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70.0;
+}
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
