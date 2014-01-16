@@ -9,6 +9,7 @@
 #import "MasterViewController.h"
 #import "FunctionalProgrammingViewController.h"
 #import "SignalSubscriptionViewController.h"
+#import "DerivingStateFromSignalViewController.h"
 
 #define kItemKeyTitle       @"title"
 #define kItemKeyDescription @"description"
@@ -35,7 +36,12 @@
                          //Signal Subscription
                          @{kItemKeyTitle: @"Signal Subscription",
                            kItemKeyDescription: @"RAC serves signal to each UIKit components, we can receive their changes from it.",
-                           kItemKeyClass: [SignalSubscriptionViewController class]}
+                           kItemKeyClass: [SignalSubscriptionViewController class]},
+                         
+                         //Deriving State
+                         @{kItemKeyTitle: @"Deriving State",
+                           kItemKeyDescription: @"RAC abstract state changes to a stream, we can bind property to it.",
+                           kItemKeyClass: [DerivingStateFromSignalViewController class]}
                          ];
     }
     return self;

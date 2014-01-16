@@ -25,6 +25,8 @@
 		2B80B3381886D9B100C2689D /* FunctionalProgrammingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B80B3361886D9B100C2689D /* FunctionalProgrammingViewController.xib */; };
 		2B80B33C1888003000C2689D /* SignalSubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B80B33A1888003000C2689D /* SignalSubscriptionViewController.m */; };
 		2B80B33D1888003000C2689D /* SignalSubscriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B80B33B1888003000C2689D /* SignalSubscriptionViewController.xib */; };
+		2B80B3411888046000C2689D /* DerivingStateFromSignalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B80B33F1888046000C2689D /* DerivingStateFromSignalViewController.m */; };
+		2B80B3421888046000C2689D /* DerivingStateFromSignalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B80B3401888046000C2689D /* DerivingStateFromSignalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		2B80B3391888003000C2689D /* SignalSubscriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignalSubscriptionViewController.h; sourceTree = "<group>"; };
 		2B80B33A1888003000C2689D /* SignalSubscriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignalSubscriptionViewController.m; sourceTree = "<group>"; };
 		2B80B33B1888003000C2689D /* SignalSubscriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignalSubscriptionViewController.xib; sourceTree = "<group>"; };
+		2B80B33E1888046000C2689D /* DerivingStateFromSignalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DerivingStateFromSignalViewController.h; sourceTree = "<group>"; };
+		2B80B33F1888046000C2689D /* DerivingStateFromSignalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DerivingStateFromSignalViewController.m; sourceTree = "<group>"; };
+		2B80B3401888046000C2689D /* DerivingStateFromSignalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DerivingStateFromSignalViewController.xib; sourceTree = "<group>"; };
 		DD833E8C6BFC4E79BDEF9898 /* libPods-RACSampler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACSampler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD3EF8A5BC844B28B3424FAA /* Pods-RACSampler.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACSampler.xcconfig"; path = "Pods/Pods-RACSampler.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +180,9 @@
 				2B80B3391888003000C2689D /* SignalSubscriptionViewController.h */,
 				2B80B33A1888003000C2689D /* SignalSubscriptionViewController.m */,
 				2B80B33B1888003000C2689D /* SignalSubscriptionViewController.xib */,
+				2B80B33E1888046000C2689D /* DerivingStateFromSignalViewController.h */,
+				2B80B33F1888046000C2689D /* DerivingStateFromSignalViewController.m */,
+				2B80B3401888046000C2689D /* DerivingStateFromSignalViewController.xib */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -258,6 +266,7 @@
 			files = (
 				2B80B3091886B90000C2689D /* InfoPlist.strings in Resources */,
 				2B80B3111886B90000C2689D /* Images.xcassets in Resources */,
+				2B80B3421888046000C2689D /* DerivingStateFromSignalViewController.xib in Resources */,
 				2B80B3381886D9B100C2689D /* FunctionalProgrammingViewController.xib in Resources */,
 				2B80B33D1888003000C2689D /* SignalSubscriptionViewController.xib in Resources */,
 			);
@@ -313,6 +322,7 @@
 			files = (
 				2B80B30F1886B90000C2689D /* AppDelegate.m in Sources */,
 				2B80B3371886D9B100C2689D /* FunctionalProgrammingViewController.m in Sources */,
+				2B80B3411888046000C2689D /* DerivingStateFromSignalViewController.m in Sources */,
 				2B80B33C1888003000C2689D /* SignalSubscriptionViewController.m in Sources */,
 				2B80B3321886BF0100C2689D /* MasterViewController.m in Sources */,
 				2B80B30B1886B90000C2689D /* main.m in Sources */,
