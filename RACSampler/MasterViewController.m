@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "FunctionalProgrammingViewController.h"
+#import "SignalSubscriptionViewController.h"
 
 #define kItemKeyTitle       @"title"
 #define kItemKeyDescription @"description"
@@ -29,7 +30,12 @@
                          //RXCollection Usage
                          @{kItemKeyTitle: @"Functional Programming",
                            kItemKeyDescription: @"We need to learn functional programming before reactive functional programming.",
-                           kItemKeyClass: [FunctionalProgrammingViewController class]}
+                           kItemKeyClass: [FunctionalProgrammingViewController class]},
+                         
+                         //Signal Subscription
+                         @{kItemKeyTitle: @"Signal Subscription",
+                           kItemKeyDescription: @"RAC serves signal to each UIKit components, we can receive their changes from it.",
+                           kItemKeyClass: [SignalSubscriptionViewController class]}
                          ];
     }
     return self;
