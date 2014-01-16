@@ -7,7 +7,6 @@
 //
 
 #import "FunctionalProgrammingViewController.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface FunctionalProgrammingViewController ()
 @property (nonatomic) IBOutlet UILabel *sequenceLabel;
